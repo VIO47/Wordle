@@ -1,13 +1,17 @@
 package Commons;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity(name = "Player")
 @Table(name = "Player")
 @NoArgsConstructor
+@Setter
+@Getter
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

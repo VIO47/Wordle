@@ -1,12 +1,16 @@
 package Commons;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity(name = "Game")
 @Table(name = "Game")
 @NoArgsConstructor
+@Setter
+@Getter
 public class Game {
 
     @Id
