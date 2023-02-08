@@ -35,12 +35,13 @@ public class Main extends Application {
         var entry = FXML.load(EntryCtrl.class, "Client", "Scenes", "StartScene.fxml");
         var instructions = FXML.load(InstructionsCtrl.class, "Client", "Scenes", "InstructionsScene.fxml");
         var name = FXML.load(NameCtrl.class, "Client", "Scenes", "NameScene.fxml");
+        var game = FXML.load(GameCtrl.class, "Client", "Scenes", "GameScene.fxml");
 
         primaryStage.setMinWidth(450);
         primaryStage.setMinHeight(600);
 
         var mainCtrl = INJECTOR.getInstance(MainCtrl.class);
-        mainCtrl.initialize(primaryStage, entry, instructions, name);
+        mainCtrl.initialize(primaryStage, entry, instructions, name, game);
     }
 }
 

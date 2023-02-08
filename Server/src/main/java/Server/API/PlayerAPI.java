@@ -1,6 +1,7 @@
-package Server;
+package Server.API;
 
 import Commons.Player;
+import Server.PlayerRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -34,6 +35,5 @@ public class PlayerAPI {
         Optional<Player> player = repo.findById(id);
         if(player.isEmpty()) return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         return ResponseEntity.ok(player.get());
-
     }
 }

@@ -14,7 +14,7 @@ public class ServerUtils {
     private final String server = "https://localhost:8080/";
     private Player dummyPlayer = new Player();
     private Player player = new Player();
-    private Game game = getGame();
+    private String word;
 
     public void setPlayer(Player player){
         this.player = player;
@@ -33,18 +33,23 @@ public class ServerUtils {
             .target(server).path("game/join")
             .request()
             .post(Entity.json(dummyPlayer));
-        Player p = response.readEntity(Game.class).getPlayer();
+        Game game = response.readEntity(Game.class);
+        Player p = game.getPlayer();
         setPlayer(p);
-        return response.readEntity(Game.class);
+        word = game.getWord();
+        return game;
     }
 
     public boolean exactPosition(Character s, int poz){
-        String word = game.getWord();
         return word.charAt(poz) == s;
     }
 
     public boolean containsLetter(Character s){
-        String word = game.getWord();
         return word.contains(s.toString());
     }
+
+    public String getWord(){
+        return word;
+    }
+
 }
