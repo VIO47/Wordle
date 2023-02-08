@@ -1,6 +1,5 @@
-package Client.Utils;
+package Client.Scenes;
 
-import Client.Utils.EntryCtrl;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;

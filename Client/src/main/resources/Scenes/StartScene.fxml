@@ -4,9 +4,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="680.0" style="-fx-background-color: #4a4e69;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Utils.EntryCtrl">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="680.0" style="-fx-background-color: #4a4e69;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Scenes.EntryCtrl">
    <children>
-      <Button fx:id="playButton" layoutX="237.0" layoutY="228.0" mnemonicParsing="false" onAction="#play" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #e07a5f;" text="PLAY">
+      <Button fx:id="buttonPlay" layoutX="237.0" layoutY="228.0" mnemonicParsing="false" onAction="#play" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #e07a5f;" text="PLAY">
          <font>
             <Font name="Berlin Sans FB" size="24.0" />
          </font>
@@ -15,7 +15,7 @@
          <font>
             <Font name="Bookman Old Style Bold" size="48.0" />
          </font></Label>
-      <Button fx:id="instructionsButton" layoutX="237.0" layoutY="312.0" mnemonicParsing="false" onAction="#showInstructions" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #e07a5f;" text="HOW TO PLAY?">
+      <Button fx:id="buttonInstruct" layoutX="237.0" layoutY="312.0" mnemonicParsing="false" onAction="#showInstructions" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #e07a5f;" text="HOW TO PLAY?">
          <font>
             <Font name="Berlin Sans FB" size="20.0" />
          </font>

@@ -21,10 +21,9 @@ public class MyFXML {
         this.injector = injector;
     }
 
-    public <T> Pair<T, Parent> load(Class<T> c, String... parts) throws RuntimeException {
+    public <T> Pair<T, Parent> load(Class<T> c, String... parts) {
         try {
-            var loader =
-                new FXMLLoader(getLocation(parts), null, null, new MyFactory(), StandardCharsets.UTF_8);
+            var loader = new FXMLLoader(getLocation(parts), null, null, new MyFactory(), StandardCharsets.UTF_8);
             Parent parent = loader.load();
             T ctrl = loader.getController();
             return new Pair<>(ctrl, parent);
@@ -33,44 +32,22 @@ public class MyFXML {
         }
     }
 
-    private URL getLocation(String[] parts) {
+    private URL getLocation(String... parts) {
         var path = Path.of("", parts).toString();
         return MyFXML.class.getClassLoader().getResource(path);
-
     }
 
     private class MyFactory implements BuilderFactory, Callback<Class<?>, Object> {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         @SuppressWarnings("rawtypes")
         public Builder<?> getBuilder(Class<?> type) {
-            return new Builder() {
-
-                /**
-                 * Returns a new instance of the specified type.
-                 *
-                 * @return a new instance of the specified type
-                 */
-                @Override
-                public Object build() {
-                    return injector.getInstance(type);
-                }
-            };
+            return (Builder) () -> injector.getInstance(type);
         }
 
-        /**
-         * Returns a new instance of the specified type.
-         *
-         * @param type the type of the class to get a new instance from
-         * @return a new instance of the specified type
-         */
         @Override
         public Object call(Class<?> type) {
             return injector.getInstance(type);
         }
     }
-
 }

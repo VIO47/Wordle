@@ -1,8 +1,8 @@
 package Client;
 
-import Client.Utils.EntryCtrl;
-import Client.Utils.InstructionsCtrl;
-import Client.Utils.MainCtrl;
+import Client.Scenes.EntryCtrl;
+import Client.Scenes.InstructionsCtrl;
+import Client.Scenes.MainCtrl;
 import com.google.inject.Binder;
 import com.google.inject.Module;
 import com.google.inject.Scopes;

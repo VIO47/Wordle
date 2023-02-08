@@ -1,4 +1,4 @@
-package Client.Utils;
+package Client.Scenes;
 
 public class InstructionsCtrl {
 }

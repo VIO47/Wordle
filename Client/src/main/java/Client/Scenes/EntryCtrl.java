@@ -1,19 +1,19 @@
-package Client.Utils;
+package Client.Scenes;
 
 import com.google.inject.Inject;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 
-import java.awt.*;
 
 public class EntryCtrl {
 
     private final MainCtrl mainCtrl;
 
     @FXML
-    public Button playButton;
+    private Button buttonPlay;
 
     @FXML
-    public Button instructionsButton;
+    private Button buttonInstruct;
 
     @Inject
     public EntryCtrl(MainCtrl mainCtrl) {
