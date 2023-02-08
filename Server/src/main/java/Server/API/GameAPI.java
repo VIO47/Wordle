@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Optional;
-
 @RestController
 @RequestMapping(path = "game")
 public class GameAPI {
@@ -27,18 +25,13 @@ public class GameAPI {
 
     @PostMapping(path = "/join")
     public ResponseEntity<Game> createGame(@RequestBody Player player){
-        Game game = repo.save(new Game());
+        Game game = new Game();
         game.setWord("PIZZA");
+        repo.save(game);
+
         game.setPlayer(player);
-
-        Optional<Player> opt = playerRepo.findById(player.getId());
-        if(opt.isEmpty()) return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-
-        //Player dummy = opt.get();
-        //dummy.setGameId(game.getId());
-        //dummy.setName(player.getName());
         player.setGameId(game.getId());
         playerRepo.save(player);
-        return ResponseEntity.ok(repo.save(game));
+        return ResponseEntity.ok(game);
     }
 }

@@ -28,4 +28,9 @@ public class Player {
         this.name = name;
         this.gameId = 0L;
     }
+
+    public Player(String name){
+        this.name = name;
+        this.gameId = 0L;
+    }
 }

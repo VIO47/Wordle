@@ -23,12 +23,19 @@ public class GameCtrl {
     @FXML
     private Label box15;
 
+    @FXML
+    private Label test;
+
 
     @Inject
     public GameCtrl(MainCtrl mainCtrl, ServerUtils utils) {
         this.mainCtrl = mainCtrl;
         this.utils = utils;
 
+    }
+
+    public void createGame(){
+        utils.createGame();
     }
 
     public void showWord(){

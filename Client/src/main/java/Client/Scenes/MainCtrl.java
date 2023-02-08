@@ -44,12 +44,13 @@ public class MainCtrl {
     }
 
     public void showEntry(){
+        entryCtrl.test();
         primaryStage.setScene(entry);
     }
 
     public void showGame(){
-        utils.createGame();
         primaryStage.setScene(game);
+        gameCtrl.createGame();
         gameCtrl.showWord();
     }
 

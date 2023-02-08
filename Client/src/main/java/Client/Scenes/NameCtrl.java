@@ -3,9 +3,13 @@ package Client.Scenes;
 import Client.Utils.ServerUtils;
 import Commons.Player;
 import com.google.inject.Inject;
+import com.google.inject.Key;
+import com.sun.javafx.css.StyleCache;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+
+import java.awt.event.KeyAdapter;
 
 public class NameCtrl {
 
@@ -13,10 +17,10 @@ public class NameCtrl {
     private final MainCtrl mainCtrl;
 
     @FXML
-    private Label labelConfirm;
+    private TextField field;
 
     @FXML
-    private TextField field;
+    private Label labelConfirm;
 
     @Inject
     public NameCtrl(ServerUtils utils, MainCtrl mainCtrl) {
@@ -25,10 +29,7 @@ public class NameCtrl {
     }
 
     public void confirm(){
-        Player p = new Player();
-        p.setName(field.getText());
-        utils.setPlayer(p);
-
+        utils.setDummy(new Player(field.getText()));
         mainCtrl.showEntry();
     }
 }
