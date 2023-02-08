@@ -1,4 +1,4 @@
-package Client;
+package Client.Utils;
 
 import com.google.inject.Inject;
 import javafx.fxml.FXML;

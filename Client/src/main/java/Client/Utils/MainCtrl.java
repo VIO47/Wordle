@@ -1,5 +1,6 @@
-package Client;
+package Client.Utils;
 
+import Client.Utils.EntryCtrl;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -12,7 +13,7 @@ public class MainCtrl {
     private EntryCtrl entryCtrl;
     private Scene entry;
 
-    public void initalize(Stage primaryStage, Pair<EntryCtrl, Parent> entry){
+    public void initialize(Stage primaryStage, Pair<EntryCtrl, Parent> entry){
         this.primaryStage = primaryStage;
 
         this.entryCtrl = entry.getKey();
