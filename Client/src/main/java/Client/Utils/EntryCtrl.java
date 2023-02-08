@@ -11,6 +11,8 @@ public class EntryCtrl {
 
     @FXML
     public Button playButton;
+
+    @FXML
     public Button instructionsButton;
 
     @Inject
@@ -18,7 +20,7 @@ public class EntryCtrl {
         this.mainCtrl = mainCtrl;
     }
 
-    public void showInstruction(){
+    public void showInstructions(){
         mainCtrl.showInstructions();
     }
 

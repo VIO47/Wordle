@@ -24,6 +24,9 @@ public class MainCtrl {
 
         this.instructionsCtrl = instructions.getKey();
         this.instructions = new Scene(instructions.getValue());
+
+        showEntry();
+        primaryStage.show();
     }
 
     public void showEntry(){
@@ -36,5 +39,6 @@ public class MainCtrl {
 
     public void showInstructions(){
         primaryStage.setScene(instructions);
+
     }
 }
