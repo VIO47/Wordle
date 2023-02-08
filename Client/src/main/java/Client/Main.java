@@ -1,6 +1,7 @@
 package Client;
 
 import Client.Utils.EntryCtrl;
+import Client.Utils.InstructionsCtrl;
 import Client.Utils.MainCtrl;
 import com.google.inject.Injector;
 import javafx.application.Application;
@@ -22,11 +23,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        var entry = FXML.load(EntryCtrl.class, "Client", "Scenes", "Start_Scene.fxml");
+        var entry = FXML.load(EntryCtrl.class, "Client", "Scenes", "StartScene.fxml");
+        var instructions = FXML.load(InstructionsCtrl.class, "Client", "Scenes", "InstructionsScenes.fxml");
 
         primaryStage.setMinHeight(450);
         primaryStage.setMinWidth(600);
         var mainCtrl = INJECTOR.getInstance(MainCtrl.class);
-        mainCtrl.initialize(primaryStage, entry);
+        mainCtrl.initialize(primaryStage, entry, instructions);
     }
 }

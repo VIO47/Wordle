@@ -1,6 +1,7 @@
 package Client;
 
 import Client.Utils.EntryCtrl;
+import Client.Utils.InstructionsCtrl;
 import Client.Utils.MainCtrl;
 import com.google.inject.Binder;
 import com.google.inject.Module;
@@ -12,5 +13,6 @@ public class MyModule implements Module {
     public void configure(Binder binder) {
         binder.bind(EntryCtrl.class).in(Scopes.SINGLETON);
         binder.bind(MainCtrl.class).in(Scopes.SINGLETON);
+        binder.bind(InstructionsCtrl.class).in(Scopes.SINGLETON);
     }
 }
