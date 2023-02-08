@@ -6,7 +6,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="680.0" style="-fx-background-color: #4a4e69;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="playButton" layoutX="237.0" layoutY="228.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #e07a5f;" text="PLAY">
+      <Button fx:id="playButton" layoutX="237.0" layoutY="228.0" mnemonicParsing="false" onAction="#play" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #e07a5f;" text="PLAY">
          <font>
             <Font name="Berlin Sans FB" size="24.0" />
          </font>
