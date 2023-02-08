@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #4a4e69;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Scenes.InstructionsCtrl">
    <children>
-      <Pane layoutX="107.0" layoutY="87.0" prefHeight="325.0" prefWidth="482.0" style="-fx-background-color: #81b29a;" />
+      <Pane layoutX="72.0" layoutY="85.0" prefHeight="325.0" prefWidth="555.0" style="-fx-background-color: #81b29a;" />
       <Label layoutX="212.0" layoutY="37.0" prefHeight="32.0" prefWidth="31.0" style="-fx-rotate: 6;" text="H" textFill="#f2cc8f">
          <font>
             <Font name="Bookman Old Style Bold Italic" size="26.0" />

@@ -11,9 +11,10 @@ import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
 public class ServerUtils {
 
-    private String server = "https://localhost:8080/";
+    private final String server = "https://localhost:8080/";
     private Player dummyPlayer = new Player();
     private Player player = new Player();
+    private Game game = getGame();
 
     public void setPlayer(Player player){
         this.player = player;
@@ -37,4 +38,13 @@ public class ServerUtils {
         return response.readEntity(Game.class);
     }
 
+    public boolean exactPosition(Character s, int poz){
+        String word = game.getWord();
+        return word.charAt(poz) == s;
+    }
+
+    public boolean containsLetter(Character s){
+        String word = game.getWord();
+        return word.contains(s.toString());
+    }
 }

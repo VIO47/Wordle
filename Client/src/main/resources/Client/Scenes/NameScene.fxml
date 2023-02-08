@@ -23,7 +23,7 @@
             <Font name="Bookman Old Style" size="36.0" />
          </font>
       </Label>
-      <Label fx:id="labelConfirm" layoutX="289.0" layoutY="391.0" onMouseClicked="#confirm" text="CONFIRM" textFill="#f4f1de">
+      <Label fx:id="labelConfirm" layoutX="289.0" layoutY="392.0" onMouseClicked="#confirm" text="CONFIRM" textFill="#f4f1de">
          <font>
             <Font name="Bookman Old Style Bold" size="24.0" />
          </font>
