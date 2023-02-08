@@ -2,4 +2,5 @@ rootProject.name = 'Wordle'
 
 include 'Commons'
 include 'Server'
+include 'Client'
 

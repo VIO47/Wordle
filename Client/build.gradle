@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'application'
+    id("org.openjfx.javafxplugin") version "0.0.11"
+
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '3.0.3'
+    implementation group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '3.0.3'
+    implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '3.0.3'
+
+    implementation group: 'jakarta.activation', name: 'jakarta.activation-api', version: '2.0.1'
+
+    implementation 'com.google.inject:guice:5.0.1'
+
+    implementation 'org.springframework.boot:spring-boot-starter-websocket:2.6.3'
+
+    implementation 'org.openjfx:javafx-controls:17.0.2'
+    implementation 'org.openjfx:javafx-fxml:17.0.2'
+
+    implementation project(":Commons")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+javafx {
+    version = "19"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
