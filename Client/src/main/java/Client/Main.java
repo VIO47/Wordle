@@ -34,12 +34,13 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {
         var entry = FXML.load(EntryCtrl.class, "Client", "Scenes", "StartScene.fxml");
         var instructions = FXML.load(InstructionsCtrl.class, "Client", "Scenes", "InstructionsScene.fxml");
+        var name = FXML.load(NameCtrl.class, "Client", "Scenes", "NameScene.fxml");
 
         primaryStage.setMinWidth(450);
         primaryStage.setMinHeight(600);
 
         var mainCtrl = INJECTOR.getInstance(MainCtrl.class);
-        mainCtrl.initialize(primaryStage, entry, instructions);
+        mainCtrl.initialize(primaryStage, entry, instructions, name);
     }
 }
 

@@ -3,6 +3,7 @@ package Client;
 import Client.Scenes.EntryCtrl;
 import Client.Scenes.InstructionsCtrl;
 import Client.Scenes.MainCtrl;
+import Client.Scenes.NameCtrl;
 import com.google.inject.Binder;
 import com.google.inject.Module;
 import com.google.inject.Scopes;
@@ -14,5 +15,6 @@ public class MyModule implements Module {
         binder.bind(EntryCtrl.class).in(Scopes.SINGLETON);
         binder.bind(MainCtrl.class).in(Scopes.SINGLETON);
         binder.bind(InstructionsCtrl.class).in(Scopes.SINGLETON);
+        binder.bind(NameCtrl.class).in(Scopes.SINGLETON);
     }
 }

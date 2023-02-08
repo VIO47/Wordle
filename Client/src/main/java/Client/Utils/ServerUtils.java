@@ -33,7 +33,7 @@ public class ServerUtils {
             .request()
             .post(Entity.json(dummyPlayer));
         Player p = response.readEntity(Game.class).getPlayer();
-        this.player = p;
+        setPlayer(p);
         return response.readEntity(Game.class);
     }
 

@@ -17,7 +17,10 @@ public class MainCtrl {
     private InstructionsCtrl instructionsCtrl;
     private Scene instructions;
 
-    public void initialize(Stage primaryStage, Pair<EntryCtrl, Parent> entry, Pair<InstructionsCtrl, Parent> instructions){
+    private NameCtrl nameCtrl;
+    private Scene name;
+
+    public void initialize(Stage primaryStage, Pair<EntryCtrl, Parent> entry, Pair<InstructionsCtrl, Parent> instructions, Pair<NameCtrl, Parent> name){
         this.primaryStage = primaryStage;
 
         this.entryCtrl = entry.getKey();
@@ -26,7 +29,10 @@ public class MainCtrl {
         this.instructionsCtrl = instructions.getKey();
         this.instructions = new Scene(instructions.getValue());
 
-        showEntry();
+        this.nameCtrl = name.getKey();
+        this.name = new Scene(name.getValue());
+
+        showName();
         primaryStage.show();
     }
 
@@ -40,6 +46,9 @@ public class MainCtrl {
 
     public void showInstructions(){
         primaryStage.setScene(instructions);
+    }
 
+    public void showName(){
+        primaryStage.setScene(name);
     }
 }

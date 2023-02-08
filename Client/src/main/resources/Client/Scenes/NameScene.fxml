@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c1121f;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Scenes.NameCtrl">
+<AnchorPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #c1121f;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Scenes.NameCtrl">
    <children>
-      <Pane layoutX="33.0" layoutY="165.0" prefHeight="202.0" prefWidth="534.0" style="-fx-background-color: #f4f1de;" />
+      <Pane layoutX="35.0" layoutY="159.0" prefHeight="208.0" prefWidth="630.0" style="-fx-background-color: #f4f1de;">
+         <children>
+            <TextField fx:id="field" alignment="CENTER" layoutX="46.0" layoutY="28.0" prefHeight="152.0" prefWidth="539.0" style="-fx-background-color: #f4f1de;">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="36.0" />
+               </font></TextField>
+         </children></Pane>
+      <Label alignment="CENTER" layoutX="154.0" layoutY="22.0" prefHeight="52.0" prefWidth="391.0" text="HELLO" textFill="#f4f1de">
+         <font>
+            <Font name="Bookman Old Style Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="89.0" prefHeight="53.0" prefWidth="235.0" text="my name is" textFill="#f4f1de">
+         <font>
+            <Font name="Bookman Old Style" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelConfirm" layoutX="289.0" layoutY="391.0" onMouseClicked="#confirm" text="CONFIRM" textFill="#f4f1de">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
