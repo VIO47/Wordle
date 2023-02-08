@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #4a4e69;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Scenes.InstructionsCtrl">
+   <children>
+      <Pane layoutX="107.0" layoutY="87.0" prefHeight="325.0" prefWidth="482.0" style="-fx-background-color: #81b29a;" />
+      <Label layoutX="212.0" layoutY="37.0" prefHeight="32.0" prefWidth="31.0" style="-fx-rotate: 6;" text="H" textFill="#f2cc8f">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="38.0" prefHeight="45.0" prefWidth="24.0" style="-fx-rotate: -10;" text="O" textFill="#f2cc8f">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="26.0" prefHeight="36.0" prefWidth="31.0" style="-fx-rotate: -17;" text="W" textFill="#f2cc8f">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" layoutY="38.0" prefHeight="36.0" prefWidth="21.0" style="-fx-rotate: 8;" text="T" textFill="#f2cc8f">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="38.0" prefHeight="29.0" prefWidth="24.0" style="-fx-rotate: 4;" text="O" textFill="#f2cc8f">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="367.0" layoutY="33.0" prefHeight="35.0" prefWidth="24.0" style="-fx-rotate: 20;" text="P" textFill="#f2cc8f">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="384.0" layoutY="38.0" prefHeight="35.0" prefWidth="24.0" style="-fx-rotate: -2;" text="L" textFill="#f2cc8f">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="38.0" prefHeight="29.0" prefWidth="24.0" style="-fx-rotate: 10;" text="A" textFill="#f2cc8f">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="27.0" prefHeight="41.0" prefWidth="24.0" style="-fx-rotate: -18;" text="Y" textFill="#f2cc8f">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="31.0" prefHeight="36.0" prefWidth="15.0" style="-fx-rotate: -13;" text="?" textFill="#f2cc8f">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="28.0" onMouseClicked="#goBack" prefHeight="39.0" prefWidth="113.0" text="BACK" textFill="#f4f1de">
+         <font>
+            <Font name="Bookman Old Style Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

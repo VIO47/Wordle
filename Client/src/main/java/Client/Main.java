@@ -1,8 +1,7 @@
 package Client;
 
-import static com.google.inject.Guice.createInjector;
-
 import Client.Scenes.*;
+import com.google.inject.Guice;
 import com.google.inject.Injector;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -14,7 +13,7 @@ import javafx.stage.Stage;
  */
 public class Main extends Application {
 
-    private static final Injector INJECTOR = createInjector(new MyModule());
+    private static final Injector INJECTOR = Guice.createInjector(new MyModule());
     private static final MyFXML FXML = new MyFXML(INJECTOR);
 
     /**

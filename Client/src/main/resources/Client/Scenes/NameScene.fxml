@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c1121f;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Scenes.NameCtrl">
+   <children>
+      <Pane layoutX="33.0" layoutY="165.0" prefHeight="202.0" prefWidth="534.0" style="-fx-background-color: #f4f1de;" />
+   </children>
+</AnchorPane>

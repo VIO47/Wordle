@@ -5,10 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity(name = "Game")
 @NoArgsConstructor
@@ -20,12 +17,14 @@ public class Game {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long playerId;
+    @OneToOne
+    @JoinColumn(name = "player_id")
+    private Player player;
     private String word;
 
-    public Game(Long id, Long playerId, String word){
+    public Game(Long id, Player player, String word){
         this.id = id;
-        this.playerId = playerId;
+        this.player = player;
         this.word = word;
     }
 }
