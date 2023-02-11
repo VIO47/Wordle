@@ -22,11 +22,14 @@ public class GameAPI {
     public GameAPI(GameRepository repo, PlayerRepository playerRepo){
         this.repo = repo;
         this.playerRepo = playerRepo;
+        utils = new Utils(repo, playerRepo);
     }
 
     @PostMapping(path = "/join")
     public ResponseEntity<Game> createGame(@RequestBody Player player){
         Game game = new Game();
+        String word = utils.getWord();
+        System.out.println(word);
         game.setWord(utils.getWord());
         repo.save(game);
 

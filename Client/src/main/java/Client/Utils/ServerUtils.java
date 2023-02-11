@@ -5,6 +5,12 @@ import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.Entity;
 import org.glassfish.jersey.client.ClientConfig;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
 public class ServerUtils {
@@ -13,6 +19,7 @@ public class ServerUtils {
     private Player dummyPlayer = new Player("");
     private Player player = new Player("");
     private String word = "";
+    private List<String> words = new ArrayList<>();
 
     public void setPlayer(Player player){
         this.player = player;
@@ -50,4 +57,15 @@ public class ServerUtils {
         return word.contains(s.toString());
     }
 
+    public void read(){
+        try {
+            Scanner scanner = new Scanner(new File("Wordle_words.txt"));
+            scanner.useDelimiter("\n");
+            while(scanner.hasNextLine()){
+                words.add(scanner.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -32,6 +32,7 @@ public class EntryCtrl {
     }
 
     public void play(){
+        utils.read();
         mainCtrl.showGame();
     }
 }
