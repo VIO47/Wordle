@@ -3,13 +3,9 @@ package Client.Scenes;
 import Client.Utils.ServerUtils;
 import Commons.Player;
 import com.google.inject.Inject;
-import com.google.inject.Key;
-import com.sun.javafx.css.StyleCache;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-
-import java.awt.event.KeyAdapter;
 
 public class NameCtrl {
 

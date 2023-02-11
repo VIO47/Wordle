@@ -1,4 +1,4 @@
-package Server;
+package Server.Database;
 
 import Commons.*;
 import org.springframework.data.jpa.repository.JpaRepository;

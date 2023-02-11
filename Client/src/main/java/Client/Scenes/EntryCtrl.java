@@ -34,8 +34,4 @@ public class EntryCtrl {
     public void play(){
         mainCtrl.showGame();
     }
-
-    public void test(){
-        test.setText(utils.getDummyPlayer().getName());
-    }
 }

@@ -1,7 +1,7 @@
 package Client.Utils;
 
 import Commons.*;
-import jakarta.ws.rs.client.*;
+import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.Entity;
 import org.glassfish.jersey.client.ClientConfig;
 
@@ -12,14 +12,10 @@ public class ServerUtils {
     private final String server = "http://localhost:8080/";
     private Player dummyPlayer = new Player("");
     private Player player = new Player("");
-    private String word;
+    private String word = "";
 
     public void setPlayer(Player player){
         this.player = player;
-    }
-
-    public String getWord(){
-        return word;
     }
 
     public void setDummy(Player player){
@@ -30,8 +26,11 @@ public class ServerUtils {
         return dummyPlayer;
     }
 
+    public String getWord(){
+        return word;
+    }
+
     public Player createGame(){
-        System.out.println(dummyPlayer.getName());
         Game game = ClientBuilder.newClient(new ClientConfig()) //
             .target(server).path("game/join") //
             .request(APPLICATION_JSON) //
@@ -40,7 +39,6 @@ public class ServerUtils {
 
         setPlayer(game.getPlayer());
         this.word = game.getWord();
-        System.out.println(game.getWord());
         return player;
     }
 
@@ -51,6 +49,5 @@ public class ServerUtils {
     public boolean containsLetter(Character s){
         return word.contains(s.toString());
     }
-
 
 }

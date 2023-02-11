@@ -2,9 +2,9 @@ package Server.API;
 
 import Commons.Game;
 import Commons.Player;
-import Server.GameRepository;
-import Server.PlayerRepository;
-import org.springframework.http.HttpStatus;
+import Server.Database.GameRepository;
+import Server.Database.PlayerRepository;
+import Server.Utils;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +17,7 @@ public class GameAPI {
 
     private final GameRepository repo;
     private final PlayerRepository playerRepo;
+    private Utils utils;
 
     public GameAPI(GameRepository repo, PlayerRepository playerRepo){
         this.repo = repo;
@@ -26,7 +27,7 @@ public class GameAPI {
     @PostMapping(path = "/join")
     public ResponseEntity<Game> createGame(@RequestBody Player player){
         Game game = new Game();
-        game.setWord("PIZZA");
+        game.setWord(utils.getWord());
         repo.save(game);
 
         game.setPlayer(player);

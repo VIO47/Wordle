@@ -44,7 +44,6 @@ public class MainCtrl {
     }
 
     public void showEntry(){
-        entryCtrl.test();
         primaryStage.setScene(entry);
     }
 

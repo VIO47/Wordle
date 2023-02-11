@@ -1,13 +1,11 @@
 package Client.Scenes;
 
-
 import Client.Utils.ServerUtils;
 import com.google.inject.Inject;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 public class GameCtrl {
@@ -39,7 +37,7 @@ public class GameCtrl {
     private Label box15;
 
     @FXML
-    private AnchorPane scenePane;
+    private AnchorPane writeLine;
 
     @Inject
     public GameCtrl(MainCtrl mainCtrl, ServerUtils utils) {
@@ -78,14 +76,6 @@ public class GameCtrl {
         };
         fill1.addEventHandler(KeyEvent.KEY_PRESSED, eventHandler);
         fill1.addEventHandler(KeyEvent.KEY_TYPED, eventHandler);
-    }
-
-    public void color(){
-        EventHandler<MouseEvent> eventHandler = event -> {
-            fill1.setText("BOX1");
-            fill2.setText("BOX2");
-        };
-        scenePane.addEventHandler(MouseEvent.MOUSE_CLICKED, eventHandler);
     }
 
     public void resetAnswer(){
