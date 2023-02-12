@@ -35,7 +35,6 @@ public class Utils {
                 words.add(w);
                 l.add(w);
             }
-            System.out.println("File was read!");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

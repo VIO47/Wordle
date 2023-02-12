@@ -19,15 +19,25 @@ public class PlayerAPI {
         this.repo = repo;
     }
 
+    /**
+     * API for retrieving all players (for testing)
+     * @return a list of all players
+     */
     @GetMapping(path = "")
     public ResponseEntity<List<Player>> getAll(){
         return ResponseEntity.ok(repo.findAll());
     }
 
+    /**
+     * API for adding a player to the database.
+     * @param player the newly added player
+     * @return a new player
+     */
     @PostMapping(path = "")
     public ResponseEntity<Player> add(@RequestBody Player player){
         return ResponseEntity.ok(repo.save(player));
     }
+
 
     @GetMapping(path = "/{id}")
     public ResponseEntity<Player> getById(@PathVariable("id") Long id){

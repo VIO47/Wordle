@@ -21,16 +21,14 @@ public class Player {
     private Long id;
 
     private String name;
-    private Long gameId;
+    private Long gameId = 0L;
 
     public Player(Long id, String name){
         this.id = id;
         this.name = name;
-        this.gameId = 0L;
     }
 
     public Player(String name){
         this.name = name;
-        this.gameId = 0L;
     }
 }

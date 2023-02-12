@@ -6,10 +6,9 @@ import Server.Database.GameRepository;
 import Server.Database.PlayerRepository;
 import Server.Utils;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(path = "game")
@@ -25,11 +24,15 @@ public class GameAPI {
         utils = new Utils(repo, playerRepo);
     }
 
+    /**
+     * API for creating a game for one user
+     * @param player the user that will join the game
+     * @return a newly created game
+     */
     @PostMapping(path = "/join")
     public ResponseEntity<Game> createGame(@RequestBody Player player){
         Game game = new Game();
         String word = utils.getWord();
-        System.out.println(word);
         game.setWord(utils.getWord());
         repo.save(game);
 
@@ -37,5 +40,10 @@ public class GameAPI {
         player.setGameId(game.getId());
         playerRepo.save(player);
         return ResponseEntity.ok(game);
+    }
+
+    @GetMapping(path = "")
+    public List<Game> getAll(){
+        return repo.findAll();
     }
 }
