@@ -75,10 +75,6 @@ public class GameCtrl {
 
     @FXML
     private Label warning;
-    @FXML
-    private FlowPane write;
-    @FXML
-    private AnchorPane scenePane;
 
     @Inject
     public GameCtrl(MainCtrl mainCtrl, ServerUtils utils) {
@@ -92,13 +88,30 @@ public class GameCtrl {
         utils.createGame();
         word = utils.getWord();
         scene.setOnKeyTyped(this::directAction);
+        scene.setOnKeyPressed(this::directAction);
     }
 
     public void directAction(KeyEvent event) {
-        if (event.getCode() == KeyCode.ENTER) {
+        if (event.getCode() == KeyCode.ENTER && !fill5.getText().equals("")) {
             submitAnswer();
+        } else if (event.getCode() == KeyCode.BACK_SPACE) {
+            deleteBox();
         } else if (event.getEventType() == KeyEvent.KEY_TYPED) {
             fillBoxes(event.getCharacter());
+        }
+    }
+
+    public void deleteBox() {
+        if (!fill5.getText().equals("")) {
+            fill5.setText("");
+        } else if (!fill4.getText().equals("")) {
+            fill4.setText("");
+        } else if (!fill3.getText().equals("")) {
+            fill3.setText("");
+        } else if (!fill2.getText().equals("")) {
+            fill2.setText("");
+        } else if (!fill1.getText().equals("")) {
+            fill1.setText("");
         }
     }
 
