@@ -25,6 +25,10 @@ public class Utils {
         read();
     }
 
+    /**
+     * Method for reading all words inside the "word.txt" file
+     * @return a list of all possible words
+     */
     public static List<String> read(){
         List<String> l = new ArrayList<>();
         try {
@@ -41,6 +45,10 @@ public class Utils {
         return l;
     }
 
+    /**
+     * Helper method for getting a random word out of the poll
+     * @return a word
+     */
     public String getWord(){
         int next = r.nextInt(words.size());
         return words.get(next);

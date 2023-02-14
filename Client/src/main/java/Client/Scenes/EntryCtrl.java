@@ -3,7 +3,6 @@ package Client.Scenes;
 import Client.Utils.ServerUtils;
 import com.google.inject.Inject;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 
@@ -13,13 +12,7 @@ public class EntryCtrl {
     private final ServerUtils utils;
 
     @FXML
-    private Button buttonPlay;
-
-    @FXML
-    private Button buttonInstruct;
-
-    @FXML
-    private Label test;
+    private Label x1;
 
     @Inject
     public EntryCtrl(MainCtrl mainCtrl, ServerUtils utils) {

@@ -49,8 +49,7 @@ public class MainCtrl {
 
     public void showGame(){
         primaryStage.setScene(game);
-        gameCtrl.createGame();
-        gameCtrl.showWord();
+        gameCtrl.createGame(game);
     }
 
     public void showInstructions(){
