@@ -1,6 +1,5 @@
 package Client.Scenes;
 
-import Client.Utils.ServerUtils;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -9,7 +8,7 @@ import javafx.util.Pair;
 public class MainCtrl {
 
     private Stage primaryStage;
-    private ServerUtils utils;
+    private Stage popUp;
 
     private EntryCtrl entryCtrl;
     private Scene entry;
@@ -41,6 +40,7 @@ public class MainCtrl {
 
         showName();
         primaryStage.show();
+        this.popUp = new Stage();
     }
 
     public void showEntry(){

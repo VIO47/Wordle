@@ -3,13 +3,12 @@ package Client.Utils;
 import Commons.*;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.Entity;
+import jakarta.ws.rs.core.GenericType;
 import org.glassfish.jersey.client.ClientConfig;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import java.util.stream.Collectors;
 
 import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
@@ -20,6 +19,7 @@ public class ServerUtils {
     public Player player = new Player("");
     private String word;
     private List<String> words = new ArrayList<>();
+    public List<Word> wordList = new ArrayList<>();
 
     public String getWord(){
         return word;
@@ -47,7 +47,9 @@ public class ServerUtils {
      * @return a boolean
      */
     public boolean isWord(String word){
-        return words.contains(word);
+        //return words.contains(word);
+        List<Word> aux = wordList.stream().filter(x -> x.getWord().equals(word)).collect(Collectors.toList());
+        return aux.size() != 0;
     }
 
     /**
@@ -80,19 +82,20 @@ public class ServerUtils {
         if(exactPosition(s, poz)) color = "#a7c957";
         else if (containsLetter(s)) color = "#ffbd00";
         else color = "#eae0d5";
-        return color;
+        return "-fx-background-color:" + color;
     }
 
     //TODO: Not working now!
-    public void read(){
-        try {
-            Scanner scanner = new Scanner(new File("Wordle_words.txt"));
-            scanner.useDelimiter("\n");
-            while(scanner.hasNextLine()){
-                words.add(scanner.nextLine());
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+    public List<Word> read(){
+        List<Word> words = ClientBuilder.newClient(new ClientConfig()) //
+            .target(server).path("word") //
+            .request(APPLICATION_JSON) //
+            .get(new GenericType<>() {
+            });
+        for(Word w : words){
+            this.words.add(w.getWord());
+            wordList.add(w);
         }
+        return words;
     }
 }

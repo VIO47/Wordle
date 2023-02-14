@@ -8,102 +8,102 @@
    <children>
       <FlowPane columnHalignment="CENTER" hgap="27.0" layoutX="168.0" layoutY="29.0" prefHeight="274.0" prefWidth="363.0" vgap="13.0">
          <children>
-            <Label fx:id="box11" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box11" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box12" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box12" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box13" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box13" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box14" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box14" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box15" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box15" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box21" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box21" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box22" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box22" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box23" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box23" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box24" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box24" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box25" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box25" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box31" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box31" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box32" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box32" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box33" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box33" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box34" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box34" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box35" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box35" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box41" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box41" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font></Label>
-            <Label fx:id="box42" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box42" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font></Label>
-            <Label fx:id="box43" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box43" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box44" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box44" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="box45" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="Label">
+            <Label fx:id="box45" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;" text="">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
          </children>
@@ -112,27 +112,27 @@
          <children>
             <Label fx:id="fill1" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
             <Label fx:id="fill2" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
             <Label fx:id="fill3" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
             <Label fx:id="fill4" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
             <Label fx:id="fill5" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f4f1de;">
                <font>
-                  <Font name="Bookman Old Style" size="14.0" />
+                  <Font name="Bookman Old Style" size="18.0" />
                </font>
             </Label>
          </children>
@@ -142,5 +142,29 @@
             <Font name="Bookman Old Style Bold" size="18.0" />
          </font>
       </Label>
+      <AnchorPane fx:id="fadeScene" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #0a0908; -fx-opacity: 0.5; visibility: false;" />
+      <Pane fx:id="winnerPane" layoutX="168.0" layoutY="95.0" prefHeight="310.0" prefWidth="363.0" style="-fx-background-color: #81b29a; visibility: false;">
+         <children>
+            <Label layoutX="106.0" layoutY="41.0" text="CONGRATS!" textFill="#f2cc8f">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="70.0" text="You have guessed the word." textFill="#f4f1de">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="128.0" layoutY="228.0" text="PLAY AGAIN?" textFill="#f4f1de">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="140.0" prefHeight="30.0" prefWidth="198.0" text="The word was: " textFill="#f4f1de">
+               <font>
+                  <Font name="Bookman Old Style" size="20.0" />
+               </font>
+            </Label>
+         </children></Pane>
    </children>
 </AnchorPane>

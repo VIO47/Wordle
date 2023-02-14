@@ -1,4 +1,3 @@
-
 aaron
 aback
 abaft
@@ -36,10 +35,6 @@ acids
 acing
 acmes
 acorn
-acost
-acoup
-acrab
-acred
 acres
 acrid
 acryl

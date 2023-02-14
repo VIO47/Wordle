@@ -27,22 +27,18 @@ public class Utils {
 
     /**
      * Method for reading all words inside the "word.txt" file
-     * @return a list of all possible words
      */
-    public static List<String> read(){
-        List<String> l = new ArrayList<>();
+    public static void read(){
         try {
             Scanner scanner = new Scanner(new File("Wordle_words.txt"));
             scanner.useDelimiter("\n");
             while(scanner.hasNextLine()){
                 String w = scanner.nextLine();
                 words.add(w);
-                l.add(w);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        return l;
     }
 
     /**
